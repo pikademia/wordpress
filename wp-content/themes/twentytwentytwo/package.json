@@ -1,0 +1,17 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "mypackage",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pikademia",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "6.0.0"
+  }
+
+}
