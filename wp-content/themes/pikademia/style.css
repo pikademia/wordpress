@@ -39,6 +39,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     padding:2rem;
     align-self: stretch;
 }
+.last_post_item_w img{
+    width: 100%;
+    height: auto;
+}
 
 .last_post_item_w a{
     text-decoration: none;
