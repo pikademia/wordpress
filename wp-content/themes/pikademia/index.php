@@ -2,6 +2,9 @@
 get_header();
 
 echo '<div class="container">';
+    if ( function_exists( 'the_custom_logo' ) ) {
+        the_custom_logo();
+    }
     if ( have_posts() ) {
         while ( have_posts() ) {
             the_post();
