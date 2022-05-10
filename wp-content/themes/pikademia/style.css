@@ -8,3 +8,52 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.page_title_w{
+    color:#aaa;
+}
+.main_content_w{
+    color:#888;
+}
+
+.main_section_description_w{
+    text-align: center;
+    text-transform: uppercase;
+    color: brown;
+    line-height: 500%;
+}
+
+.last_posts_section_w{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+.last_post_item_w{
+    box-shadow: 3px 3px 3px #ccc;
+    flex:1 1 0;
+    padding:2rem;
+}
+
+.last_post_item_w a{
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.last_post_item_w p{
+    padding-top: 0.5rem;
+}
+
+
+@media (max-width:860px){
+    .last_posts_section_w{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
