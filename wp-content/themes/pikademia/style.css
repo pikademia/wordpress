@@ -37,6 +37,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     box-shadow: 3px 3px 3px #ccc;
     flex:1 1 0;
     padding:2rem;
+    align-self: stretch;
 }
 
 .last_post_item_w a{
