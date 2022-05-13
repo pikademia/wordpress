@@ -1,0 +1,41 @@
+
+/* To jest sekcja Ostatnie wpisy */
+
+.last_posts_section_w {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .last_post_item_w {
+    box-shadow: 3px 3px 3px #ccc;
+    flex: 1 1 0;
+    padding: 2rem;
+    align-self: stretch;
+  }
+  
+  .last_post_item_w img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .last_post_item_w a {
+    text-decoration: none;
+    color: brown;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .last_post_item_w p {
+    padding-top: 0.5rem;
+  }
+  
+  @media (max-width: 860px) {
+    .last_posts_section_w {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  
