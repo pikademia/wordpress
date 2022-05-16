@@ -18,8 +18,16 @@ if($the_query -> have_posts()){
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail();
             }
-            echo get_the_title().'</a>';
-            echo '<p>'.substr(get_the_excerpt(), 0, 120).'</p>';   
+            echo get_the_title();
+            echo '</a>';
+            echo '<p>'.substr(get_the_excerpt(), 0, 120).'</p>';
+
+            echo '<div class="last_post_item_cover_w">';
+                echo '<i class="ti ti-book"></i>';
+                echo '<h2>'.get_the_title().'</h2>';
+                echo '<hr>';
+                echo '<a href = "'.get_the_permalink(). '" class="read_more_btn_w">READ MORE</a>';
+            echo '</div>';
         echo '</div>';
     }
 }

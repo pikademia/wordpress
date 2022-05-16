@@ -13,5 +13,4 @@ get_header();
     get_template_part('template-parts/ostatnie_wpisy');
 
 
-
 get_footer();
