@@ -1,25 +1,20 @@
 <?php
 get_header();
 
+echo '<div class="container xl">';
     if ( have_posts() ) {
         while ( have_posts() ) {
             the_post();
 
             echo '<div class="single_info_section_w">';
-                echo '<div class="single_img_w">';
-                    if ( has_post_thumbnail() ) {
-                        the_post_thumbnail();
-                    }else{
-                        ?>
-                            <img src="<?php bloginfo('template_directory'); ?>/article_default.jpg" alt="<?php the_title(); ?>" />
-                        <?php
-                    }
+                echo '<div class="single_info_section_img_w">';
+                    get_template_part('template-parts/thumbnail');
                 echo '</div>';
 
-                echo '<div class="single_info_w">';
-                    echo '<h1 class="page_title_w">'.get_the_title().'</h1>';
-                    echo '<div class="date_w">Data utworzenia: '.get_the_date('d / m / Y').'</div>';
-                    echo '<div class="category_list_w"> Kategorie: ';
+                echo '<div class="single_info_section_info_cont_w">';
+                    echo '<h1>'.get_the_title().'</h1>';
+                    echo '<div>Data utworzenia: '.get_the_date('d / m / Y').'</div>';
+                    echo '<div class="single_info_section_info_cont_cat_cont_w"> Kategorie: ';
                         $category_list = get_the_category( $id );
                         foreach ($category_list as $cat){
                             echo '<div class="cat_item_w">';
@@ -29,11 +24,13 @@ get_header();
                             echo '</div>';
                         }
                     echo '</div>';
-                echo '</div>';
-            echo '</div>';
+                echo '</div>'; // end single_info_section_info_cont_w
 
-            echo '<p class="main_content_w">'.get_the_content().'</p>';
+            echo '</div>'; // end single_info_section_w
+
+            echo '<p class="single_main_content_w">'.get_the_content().'</p>';
+
         } 
     } 
-
+echo '</div>'; // end container
 get_footer();

@@ -9,9 +9,9 @@ get_header();
             echo '<p class="main_content_w">'.get_the_content().'</p>';
         } 
     } 
-	
-    get_template_part('template-parts/ostatnie_wpisy');
-    
+	echo '<div class="container xl">';
+        get_template_part('template-parts/ostatnie_wpisy');
+    echo '</div>';
 
 
 get_footer();
