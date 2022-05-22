@@ -4,11 +4,55 @@ Theme Name: Pikademia
 Author: Mateusz 
 Description: Motyw edukacyjny dla szkoły w chmurze
 Requires at least: 5.9
-Version: 1.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-/* To jest sekcja dla całej strony */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+:root {
+  --themeColor1:#aa4444;
+}
+
 .xl {
   max-width: 1280px;
 }
@@ -19,6 +63,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* header */
 .header_section {
+  padding-top: 20px;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -28,23 +73,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 .blog_info_desc_w {
-  margin-top: -10px;
-}
-
-.page_title_w {
-  color: #aaa;
+  line-height: 1.4rem;
 }
 
 .custom-logo {
   max-width: 60px;
   height: auto;
-}
-
-.main_content_w {
-  color: #888;
 }
 
 .main_section_description_w {
@@ -54,23 +92,27 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   line-height: 500%;
 }
 
-/* To jest sekcja Ostatnie wpisy */
-.last_posts_section_w {
+.blog_container {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blog_section_w {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
-
-.last_post_item_w {
-  box-shadow: 3px 3px 3px #ccc;
-  flex: 1 1 0;
-  padding: 2rem;
-  align-self: stretch;
+.blog_section_w .top_w {
   position: relative;
 }
-
-.last_post_item_date_w {
+.blog_section_w .top_w img {
+  max-width: 240px;
+  height: auto;
+}
+.blog_section_w .top_w .last_post_item_date_w {
   position: absolute;
   right: 0;
   top: 0;
@@ -82,30 +124,166 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   justify-content: center;
   gap: 10px;
   padding: 10px;
-  background-color: #ccc;
+  background-color: #444;
+  color: #eee;
+  font-weight: 600;
+}
+.blog_section_w .top_w .last_post_item_date_w .date_w {
+  font-size: 1rem;
+}
+.blog_section_w .top_w .last_post_item_date_w .date_year_w {
+  font-size: 1.4rem;
+  margin-top: -0.4rem;
+}
+.blog_section_w .bottom_w .category_list_w {
+  display: flex;
+  gap: 4px;
+}
+.blog_section_w .bottom_w .category_list_w .cat_item_w a {
+  padding: 7px;
+  font-size: 0.8rem;
+  background-color: var(--themeColor1);
+  color: #eee;
+}
+.blog_section_w .bottom_w a {
+  text-decoration: none;
+  color: brown;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
+@media (max-width: 860px) {
+  .blog_container {
+    gap: 4rem;
+  }
+
+  .blog_section_w {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .blog_section_w .top_w img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.last_posts_section_w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.last_post_item_w {
+  flex: 1 1 0;
+  align-self: stretch;
+  position: relative;
+  gap: 10px;
+}
 .last_post_item_w img {
   width: 100%;
   height: auto;
 }
-
 .last_post_item_w a {
   text-decoration: none;
   color: brown;
   text-transform: uppercase;
   font-weight: 600;
-  padding-top: 20px;
+  font-size: 1.2rem;
 }
-
 .last_post_item_w p {
-  padding-top: 0.5rem;
+  padding-top: 1rem;
+}
+.last_post_item_w .top_w {
+  position: relative;
+}
+.last_post_item_w .top_w .last_post_item_date_w {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+  background-color: #444;
+  color: #eee;
+  font-weight: 600;
+}
+.last_post_item_w .top_w .last_post_item_date_w .date_w {
+  font-size: 0.9rem;
+}
+.last_post_item_w .top_w .last_post_item_date_w .date_year_w {
+  font-size: 1.2rem;
+  margin-top: -0.4rem;
+}
+.last_post_item_w .category_list_w {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  width: 100%;
+  display: flex;
+  gap: 4px;
+}
+.last_post_item_w .category_list_w .cat_item_w a {
+  padding: 7px;
+  font-size: 0.8rem;
+  background-color: var(--themeColor1);
+  color: #eee;
 }
 
 @media (max-width: 860px) {
   .last_posts_section_w {
     flex-direction: column;
     align-items: stretch;
+  }
+}
+.single_info_section_w {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.single_info_section_w .single_img_w img {
+  max-width: 480px;
+  height: auto;
+  overflow: hidden;
+}
+.single_info_section_w .single_info_w {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.single_info_section_w .single_info_w .page_title_w {
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+.single_info_section_w .single_info_w .category_list_w {
+  display: flex;
+  gap: 5px;
+  padding-top: 1rem;
+}
+.single_info_section_w .single_info_w .category_list_w .cat_item_w a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #666;
+  color: #eee;
+}
+
+.main_content_w {
+  color: #555;
+}
+
+@media (max-width: 860px) {
+  .single_info_section_w .single_img_w img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

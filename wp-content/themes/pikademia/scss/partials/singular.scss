@@ -1,0 +1,54 @@
+.single_info_section_w{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+
+    .single_img_w img{
+        max-width: 480px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .single_info_w{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .page_title_w{
+            color: #aaa;
+            text-transform: uppercase;
+            font-size: 2.4rem;
+        }
+
+        .category_list_w{
+            display: flex;
+            gap:5px;
+            padding-top: 1rem;
+            
+            .cat_item_w a{
+                text-decoration: none;
+                padding: 5px 10px;
+                font-size: 1rem;
+                background-color: #666;
+                color: #eee;
+              }
+        }
+    }
+
+}
+
+.main_content_w {
+    color: #555;
+    }
+
+    
+@media (max-width: 860px) {
+    .single_info_section_w{
+        .single_img_w img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 
-/* To jest sekcja Ostatnie wpisy */
 
 .last_posts_section_w {
     display: flex;
@@ -9,50 +8,93 @@
   }
   
   .last_post_item_w {
-    box-shadow: 3px 3px 3px #ccc;
     flex: 1 1 0;
-    padding: 2rem;
     align-self: stretch;
     position: relative;
-  }
+    gap:10px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
 
-  .last_post_item_date_w{
-    position: absolute;
-    right:0;
-    top:0;
-    width:60px;
-    height:60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #ccc;
-  }
+    a {
+      text-decoration: none;
+      color: brown;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2rem;
+
+    }
+
+    p{
+      padding-top: 1rem;
+    }
+
+    .top_w{
+      position: relative;
+      
+      .last_post_item_date_w{
+        position: absolute;
+        right:0;
+        top:0;
+        width:60px;
+        height:60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+        background-color: #444;
+        color: #eee;
+        font-weight: 600;
+    
+        .date_w{
+          font-size: 0.9rem;
+        }
+    
+        .date_year_w{
+          font-size: 1.2rem;
+          margin-top: -0.4rem;
+        }
+    
+      }
+    }
+
+    .category_list_w{
+      position: absolute;
+      bottom:30px;
+      left: 20px;
+      width: 100%;
+      display: flex;
+      gap: 4px;
   
-  .last_post_item_w img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .last_post_item_w a {
-    text-decoration: none;
-    color: brown;
-    text-transform: uppercase;
-    font-weight: 600;
-    padding-top: 20px;
-  }
-  
-  .last_post_item_w p {
-    padding-top: 0.5rem;
-  }
-  
-  @media (max-width: 860px) {
-    .last_posts_section_w {
-      flex-direction: column;
-      align-items: stretch;
+      .cat_item_w a{
+        padding: 7px;
+        font-size: 0.8rem;
+        background-color: var(--themeColor1);
+        color: #eee;
+      }
     }
   }
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+@media (max-width: 860px) {
+  .last_posts_section_w {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
   
   
