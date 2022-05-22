@@ -12,15 +12,39 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* To jest sekcja dla całej strony */
 
-.container {
-  max-width: 1200px;
+
+.xl {
+  max-width:1280px;
+}
+
+.container{
   margin: 0 auto;
+}
+
+
+/* header */
+
+.header_section{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.blog_info_name_w{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.blog_info_desc_w{
+  margin-top: -10px;
 }
 
 .page_title_w {
   color: #aaa;
 }
-
+.custom-logo{
+  max-width:60px;
+  height: auto;
+}
 .main_content_w {
   color: #888;
 }

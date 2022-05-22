@@ -9,13 +9,38 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /* To jest sekcja dla całej strony */
+.xl {
+  max-width: 1280px;
+}
+
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+}
+
+/* header */
+.header_section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.blog_info_name_w {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.blog_info_desc_w {
+  margin-top: -10px;
 }
 
 .page_title_w {
   color: #aaa;
+}
+
+.custom-logo {
+  max-width: 60px;
+  height: auto;
 }
 
 .main_content_w {
@@ -43,51 +68,21 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   padding: 2rem;
   align-self: stretch;
   position: relative;
-  box-sizing: border-box;
 }
 
-.last_post_item_cover_w h2 {
-  color: brown;
-}
-
-.last_post_item_cover_w .ti {
-  color: brown;
-  font-size: 3rem;
-}
-
-.last_post_item_cover_w hr {
-  border: 3px solid brown;
-  color: brown;
-  width: 80%;
-  margin-top: -20px;
-}
-
-.last_post_item_w:hover .last_post_item_cover_w {
+.last_post_item_date_w {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
+  right: 0;
   top: 0;
-  background-color: rgb(255, 255, 255);
-  z-index: 12;
+  width: 60px;
+  height: 60px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: 0.5s;
-  flex-direction: column;
-  gap: 20px;
-}
-
-a.read_more_btn_w {
-  padding: 20px;
-  background-color: white;
-  border: 2px solid brown;
-  color: brown;
-  cursor: pointer;
-}
-
-.last_post_item_cover_w {
-  display: none;
+  gap: 10px;
+  padding: 10px;
+  background-color: #ccc;
 }
 
 .last_post_item_w img {
@@ -100,6 +95,7 @@ a.read_more_btn_w {
   color: brown;
   text-transform: uppercase;
   font-weight: 600;
+  padding-top: 20px;
 }
 
 .last_post_item_w p {
@@ -110,10 +106,6 @@ a.read_more_btn_w {
   .last_posts_section_w {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .last_post_item_w:hover .last_post_item_cover_w {
-    display: none;
   }
 }
 
