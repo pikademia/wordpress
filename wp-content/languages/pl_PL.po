@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.9.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-04-22 07:14:45+0000\n"
+"PO-Revision-Date: 2022-05-23 08:52:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1377,7 +1377,7 @@ msgstr "Narzędzia"
 #: wp-admin/export.php:201 wp-admin/export.php:226 wp-admin/export.php:248
 #: wp-admin/export.php:273
 msgid "All"
-msgstr "Wszystkie"
+msgstr "Wszystko"
 
 #: wp-includes/js/dist/block-editor.js:9148
 #: wp-includes/js/dist/block-editor.js:9708
@@ -1878,7 +1878,7 @@ msgstr "Zdobądź nowe hasło"
 
 #: wp-login.php:820
 msgid "Please enter your username or email address. You will receive an email message with instructions on how to reset your password."
-msgstr "Wprowadź nazwę użytkownika lub adres email. Wyślemy wiadomość z instrukcjami dotyczącymi resetowania hasła."
+msgstr "Wprowadź nazwę użytkownika lub adres e-mail. Wyślemy wiadomość z instrukcjami dotyczącymi resetowania hasła."
 
 #: wp-login.php:820
 msgid "Lost Password"
@@ -4715,7 +4715,7 @@ msgstr "Napisy"
 
 #: wp-includes/script-loader.php:975
 msgid "Audio Player"
-msgstr "Odtwarzacz muzyki"
+msgstr "Odtwarzacz plików dźwiękowych"
 
 #: wp-includes/script-loader.php:974
 msgid "Video Player"
@@ -9936,7 +9936,7 @@ msgstr "Nieprawidłowy klucz aktywacyjny."
 #: wp-includes/ms-functions.php:1135
 msgctxt "New user notification email subject"
 msgid "[%1$s] Activate %2$s"
-msgstr "[%1$s] Aktywacja %2$s"
+msgstr "[%1$s] Włączono %2$s"
 
 #. translators: New user notification email. %s: Activation URL.
 #: wp-includes/ms-functions.php:1111
@@ -9958,7 +9958,7 @@ msgstr ""
 #: wp-includes/ms-functions.php:1023
 msgctxt "New site notification email subject"
 msgid "[%1$s] Activate %2$s"
-msgstr "[%1$s] Aktywacja %2$s"
+msgstr "[%1$s] Włączono %2$s"
 
 #. translators: New site notification email. 1: Activation URL, 2: New site
 #. URL.
@@ -10917,12 +10917,12 @@ msgstr "Nazwa pliku:"
 #: wp-includes/media-template.php:419 wp-admin/includes/media.php:3332
 #: wp-admin/includes/media.php:3334
 msgid "Uploaded to:"
-msgstr "Wgrany do:"
+msgstr "Wgrano do:"
 
 #: wp-includes/media-template.php:410 wp-admin/includes/media.php:3317
 #: wp-admin/includes/media.php:3319
 msgid "Uploaded by:"
-msgstr "Wgrany przez:"
+msgstr "Wgrane przez:"
 
 #: wp-includes/media-template.php:408
 msgid "Uploaded on:"
@@ -10955,7 +10955,7 @@ msgstr "Podgląd załącznika"
 
 #: wp-includes/media-template.php:346
 msgid "Edit next media item"
-msgstr "Edytuj następne medium"
+msgstr "Edytuj następny plik"
 
 #: wp-includes/media-template.php:345
 msgid "Edit previous media item"
@@ -11395,7 +11395,7 @@ msgstr "Dzień:"
 #: wp-includes/general-template.php:1714 wp-includes/general-template.php:2378
 msgctxt "daily archives date format"
 msgid "F j, Y"
-msgstr "j F Y"
+msgstr "Y-m-d"
 
 #: wp-includes/general-template.php:1712
 msgctxt "date archive title prefix"
@@ -13171,7 +13171,7 @@ msgstr "Dodaj komentarz"
 
 #: wp-includes/comment-template.php:1680
 msgid "Log in to Reply"
-msgstr "Zaloguj się, aby móc odpowiedzieć"
+msgstr "Zaloguj się, aby odpowiedzieć"
 
 #. translators: Comment reply button text. %s: Comment author name.
 #: wp-includes/comment-template.php:1679
@@ -14400,7 +14400,7 @@ msgstr "H:i"
 #: wp-admin/includes/schema.php:426 wp-admin/options-general.php:293
 #: wp-admin/options-general.php:319 wp-admin/update-core.php:1057
 msgid "F j, Y"
-msgstr "j F Y"
+msgstr "Y-m-d"
 
 #. translators: 'rtl' or 'ltr'. This sets the text direction for WordPress.
 #: wp-includes/class-wp-locale.php:217 wp-includes/script-loader.php:275
