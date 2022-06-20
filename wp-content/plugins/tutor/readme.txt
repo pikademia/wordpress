@@ -3,9 +3,9 @@ Contributors: themeum
 Donate link: https://www.themeum.com
 Tags: lms, course, elearning, education, learning management system
 Requires at least: 5.3
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 7.0
-Stable tag: 2.0.4
+Stable tag: 2.0.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -224,6 +224,62 @@ Looking for the best LMS for WordPress? Get Tutor and start your e-learning webs
 31. Mobile Responsive: Highly responsive UI designed for quality user experience
 
 == Changelog ==
+
+= 2.0.6 - June 13, 2022
+
+New: Admin will be able to moderate Course Review submitted by Students, Admin can enable it from Settings
+New: Order Filter option by Date and by Course Name is introduced on the Course List page
+New: "Load More" option is added for "Q&A" Tab on the Course Details page
+New: "Load More" option is added for the "Comments" Tab in the Lesson' page
+New: Instructor will be redirected to "My Courses" page while clicking on the course "Publish" button, Admin can enable it from Settings
+New: Admin will be able to do Enroll multiple students to a Course on a newly designed Manual Enrollment page
+Update: The "Quiz Attempts" page is now more optimized to load faster
+Update: In "Content Drip" when there is a pre-requisite course, Student will see the Alert page with new design
+Update: More strings are now translatable in other languages than English
+Fix: In case of "Content Drip" the "Course content available sequentially" option was not working
+Fix: Content Drip is not working as expected for Instructors/Admins when "Course Content Access" is enabled
+Fix: Lock icon was not appearing when content is restricted by Content Drip
+Fix: Some stats were showing wrong count information in the Reports page
+Fix: In the WP Admin, the "Instructor" page the "Status sort" option was not working
+Fix: In some cases, Admin was not being able to see "Q&A" Tab even though "Course Content Access" is enabled
+Fix: In Mobile View the Quizzes were not Sortable and Draggable
+Fix: Quiz Ordering used to get changed after updating any specific Quiz
+Fix: After adding a Custom Link to Tutor Dashboard Menu (with custom code), the design would appear broken
+Fix: Adding multiple instructor feature was not working
+
+= 2.0.5 - May 26, 2022
+
+New: Course Details page design is improved for a better experience
+New: The Active Topic in the Lesson List sidebar now remains uncollapsed for a better experience inside the course
+New: On the Course Journey page, the currently active Lesson/Quiz/Assignment menu will remain highlighted   
+New: Once a Course is purchased using WooCommerce, the Order Status will become “Completed”, Admin can enable it from Settings
+New: Certificates created by Admins will be usable (not editable) by Instructors, Admins can enable it from Settings
+New: Students and Instructors will see “Terms & Conditions” information and link on the Signup page to be compliant with regulatory laws
+New: Non-Video lessons will show Next and Prev navigation option
+New: A button to go to Frontend Course Builder has been introduced for the Gutenberg Editor
+Update: Single Course page is redesigned with changes in Instructor List, Curriculum, and Course Contents
+Update: The Courses page of the Admin Panel is redesigned with an introduction to Course Image
+Update: All table designs are improved in both Front-site and Admin Panel
+Update: Accordion is redesigned throughout the entire platform
+Update: Gradebook delete confirmation alert is now shown on modal
+Update: Numerous pages optimized for faster loading and better performance 
+Update: “Students must be logged in to see the Course Contents” option is reintroduced
+Update: On top of the Course Journey Page, the Course Title will now appear instead of the “Lesson/Assignment/Quiz” name
+Update: Greater translation compatibility updated 
+Fix: The Rich Text Editor was not saving any changes made in the “Text” Mode
+Fix: "Q&A", "Announcements", and "Resources" were not accessible to Admin and Instructors
+Fix: “Question & Answer” Page was showing archived Q&As too
+Fix: On the User Dashboard page, the Active Course count was appearing wrong
+Fix: The Wishlist icon was not showing that a course is on the wishlist 
+Fix: In a student's individual Report page the Enroll Date was showing wrong
+Fix: When editing a Quiz, the "Default" option was not staying active by default
+Fix: On the Course Details page any language other than English was causing the “Last Updated” time to show incorrectly
+Fix: On the Enrolled Courses page under the “Completed Courses” tab, course blocks were showing incorrect button names in case of Restrict Content
+Fix: In Content Drip, in the “Content available after X days from enrolment" option, the number field to set days was too narrow
+Fix: On some websites, in the case of Lesson, the default "Featured Image" was not appearing on the Lesson's page in the Course Journey
+Fix: Video tab collapse was not working in the Course Builder
+Fix: The title and description of the “Quiz Attempts allowed” settings were wrong before. 
+Fix: Zoom meeting’s page was not being closed while clicking the cross icon.
 
 = 2.0.4 - May 13, 2022
 

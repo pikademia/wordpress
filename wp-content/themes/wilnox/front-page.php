@@ -11,7 +11,7 @@ get_header();
         } 
     }
 
-    get_template_part('template-parts/baner');
+
 
 	echo '<div class="container xl">';
         get_template_part('template-parts/ostatnie_wpisy');

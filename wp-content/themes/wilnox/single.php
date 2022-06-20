@@ -15,8 +15,8 @@ echo '<div class="container xl">';
                     echo '<h1>';
                         the_title();
                     echo '</h1>';
-                    echo '<div>Data utworzenia: '.get_the_date('d / m / Y').'</div>';
-                    echo '<div class="single_info_section_info_cont_cat_cont_w"> Kategorie: ';
+                    echo '<div>Published: '.get_the_date('d / m / Y').'</div>';
+                    echo '<div class="single_info_section_info_cont_cat_cont_w"> Categories: ';
                         $category_list = get_the_category( $id );
                         foreach ($category_list as $cat){
                             echo '<div class="cat_item_w">';
@@ -27,7 +27,7 @@ echo '<div class="container xl">';
                         }
                     echo '</div>';
 
-                    echo '<div class="single_info_section_info_cont_tags_cont_w"> Tagi: ';        
+                    echo '<div class="single_info_section_info_cont_tags_cont_w"> Tags: ';        
                     $posttags = get_the_tags();
                     if ($posttags) {
                         foreach($posttags as $tag) {

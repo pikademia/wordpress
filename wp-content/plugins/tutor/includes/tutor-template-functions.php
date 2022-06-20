@@ -464,11 +464,18 @@ if ( ! function_exists( 'tutor_course_loop_author' ) ) {
 
 if ( ! function_exists('tutor_course_loop_price')) {
     function tutor_course_loop_price() {
+		
+		ob_start();
+		
 		$course_id = get_the_ID();
-
-        ob_start();
-
-        if(tutor_utils()->is_enrolled($course_id) || get_post_meta($course_id, '_tutor_is_public_course', true)=='yes'){
+		$can_continue = tutor_utils()->is_enrolled($course_id) || get_post_meta($course_id, '_tutor_is_public_course', true)=='yes';
+		
+		// Check for further access type like course content access settings
+		if(!$can_continue){
+			$can_continue = tutor_utils()->has_user_course_content_access(get_current_user_id(), $course_id);
+		}
+		
+        if( $can_continue ){
             tutor_load_template( 'loop.course-continue' );
 
         } else if(tutor_utils()->is_course_added_to_cart($course_id)){
@@ -1066,12 +1073,16 @@ function tutor_course_question_and_answer( $echo = true ) {
  * @show progress bar about course complete
  *
  * @since v.2.0.0
+ *
+ * Course Curriculum added
+ *
+ * @since v2.0.5
  */
 
 function tutor_course_info_tab() {
     tutor_course_content();
     tutor_course_benefits_html();
-    tutor_course_instructors_html();
+	tutor_course_topics();
 }
 
 

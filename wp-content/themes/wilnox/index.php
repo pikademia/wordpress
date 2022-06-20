@@ -7,7 +7,7 @@ get_header();
                 single_cat_title();
             }
             if(is_home()){
-                echo 'Blogosfera';
+                echo 'Blog';
             }
 
         echo '</div>';

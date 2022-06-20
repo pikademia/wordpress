@@ -55,6 +55,13 @@ class Assets {
 		 */
 		add_filter( 'body_class', array( $this, 'add_identifier_class_to_body' ) );
 		add_filter( 'admin_body_class', array( $this, 'add_identifier_class_to_body' ) );
+
+		/**
+		 * Add edit with front end builder button on Gutenberg editor
+		 *
+		 * @since v2.0.5
+		 */
+		add_action( 'enqueue_block_editor_assets', __CLASS__ . '::add_frontend_editor_button' );
 	}
 
 	private function get_default_localized_data()
@@ -71,8 +78,11 @@ class Assets {
 		$post_type = get_post_type( $post_id );
 
 		$query_vars 	= $wp_query->query_vars;
-		$current_page 	= isset( $query_vars['tutor_dashboard_page'] ) ? $query_vars['tutor_dashboard_page'] : '';
-
+		if ( is_admin() && isset( $_GET['page'] ) ) {
+			$current_page = $_GET['page'];
+		} else {
+			$current_page 	= isset( $query_vars['tutor_dashboard_page'] ) ? $query_vars['tutor_dashboard_page'] : '';
+		}
 		return array(
 			'ajaxurl'                      => admin_url( 'admin-ajax.php' ),
 			'home_url'                     => get_home_url(),
@@ -94,7 +104,7 @@ class Assets {
 			'content_change_event'         => 'tutor_content_changed_event',
 			'is_tutor_course_edit'		   => isset( $_GET[ 'action'] ) && 'edit' === $_GET['action'] && tutor()->course_post_type === get_post_type( get_the_ID() ) ? true : false,
 			'assignment_max_file_allowed'  => 'tutor_assignments' === $post_type ? (int) tutor_utils()->get_assignment_option( $post_id, 'upload_files_limit' ) : 0,
-			'current_page'				   => $current_page
+			'current_page'				   => $current_page,
 		);
 	}
 
@@ -154,6 +164,7 @@ class Assets {
 		 * Enabling Sorting, draggable, droppable...
 		 */
 		wp_enqueue_script( 'jquery-ui-sortable' );
+		wp_enqueue_script( 'jquery-touch-punch', array('jquery-ui-sortable') );
 		
 		// Plyr
 		if(is_single_course(true)) {
@@ -485,5 +496,30 @@ class Assets {
 		}
 
 		return $classes;
+	}
+
+	/**
+	 * Enqueue script for adding edit with frontend course builder button
+	 * on the Gutenberg editor
+	 *
+	 * @since v2.0.5
+	 *
+	 * @return void
+	 */
+	public static function add_frontend_editor_button() {
+		$wp_screen = get_current_screen();
+
+		if ( is_a( $wp_screen, 'WP_Screen' ) && tutor()->course_post_type === $wp_screen->post_type ) {
+			wp_enqueue_script( 'tutor-gutenberg', tutor()->url . 'assets/js/tutor-gutenberg.min.js', array(), TUTOR_VERSION, true );
+			$data = array(
+				'frontend_dashboard_url' => esc_url( trailingslashit( tutor_utils()->tutor_dashboard_url( 'create-course' ) ) ) . '?course_ID=' . get_the_ID(),
+			);
+			
+			wp_add_inline_script(
+				'tutor-gutenberg',
+				'const tutorInlineData =' . json_encode( $data ),
+				'before'
+			);
+		}
 	}
 }

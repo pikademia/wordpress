@@ -3,7 +3,7 @@
 
 <div class="container footer">
     <p>WILNOX </p>
-    <p>Polski Wirtualny Instytut Naukowy</p>
+    <p>VIRTUAL ACADEMY</p>
 
     <?php
     if ( function_exists( 'the_custom_logo' ) ) {

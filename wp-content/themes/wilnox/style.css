@@ -89,17 +89,18 @@ p {
 .header_section_logo_section {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .blog_info_name_w {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.3rem;
-  line-height: 2rem;
+  line-height: 1.5rem;
 }
 
 .blog_info_desc_w {
-  line-height: 1.4rem;
+  line-height: 1.2rem;
 }
 
 .main_menu .ti {
