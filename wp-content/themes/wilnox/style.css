@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*
-Theme Name: Pikademia
-Author: Mateusz 
-Description: Motyw edukacyjny dla szkoły w chmurze
+Theme Name: WILNOX
+Author: Mateusz Wiliński
+Author URI: https://wilnox.pl/
+Description: Motyw edukacyjny wilnox
 Requires at least: 5.9
 Version: 1.0.2
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
@@ -43,6 +43,21 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  border: 2px solid #aaa;
+  margin: 30px 0px;
+}
+
+td, tr {
+  border: 1px solid #aaa;
+  padding: 10px;
+}
+
+p {
+  padding: 7px 0px;
+}
+
+.no_padding {
+  padding: 0px;
 }
 
 * {
@@ -272,20 +287,20 @@ table {
 
 .blog_item_info_cont_w a {
   text-decoration: none;
-  color: brown;
+  color: var(--themeColor1);
   font-weight: 600;
   font-size: calc(0.7rem + 1vw);
   line-height: calc(1.4rem + 1vw);
 }
 
 .blog_item_info_cont_w p {
-  padding-bottom: calc(0.4rem + 1vw);
+  padding-bottom: calc(0.5rem + 0.3vw);
 }
 
 .blog_item_info_cont_cat_cont_w {
   display: flex;
   gap: 4px;
-  padding-top: 1rem;
+  padding-top: calc(0.6rem + 0.3vw);
 }
 
 .blog_item_info_cont_cat_cont_w .cat_item_w a {
@@ -366,7 +381,7 @@ table {
 
 .last_post_item_w a {
   text-decoration: none;
-  color: brown;
+  color: var(--themeColor1);
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -483,6 +498,50 @@ table {
   .single_info_section_info_cont_tags_cont_w {
     padding-top: 0.4rem;
   }
+}
+.baner {
+  min-height: 600px;
+  background-color: #333;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.baner h1 {
+  font-size: calc(1.6rem + 1vw);
+  line-height: calc(3.2rem + 1vw);
+  text-align: center;
+}
+
+.baner .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 48;
+  font-size: calc(4rem + 1vw);
+}
+
+.footer {
+  background-color: #333;
+  color: #aaa;
+  border-top: 3px solid #666;
+  margin-top: 50px;
+  padding: 30px 0px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer p:nth-of-type(1) {
+  font-weight: 600;
+}
+
+.footer .custom-logo-link img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

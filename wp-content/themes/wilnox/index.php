@@ -24,8 +24,8 @@ get_header();
                         echo '</a>';
 
                         echo '<div class="blog_item_thumb_cont_date_cont_w">';
-                            echo '<p>'.get_the_date('d').' / '. get_the_date('m') .'</p>';
-                            echo '<p>'.get_the_date('Y').'</p>';
+                            echo '<p class="no_padding">'.get_the_date('d').' / '. get_the_date('m') .'</p>';
+                            echo '<p class="no_padding">'.get_the_date('Y').'</p>';
                         echo '</div>';
 
                     echo '</div>'; // end blog_item_thumb_cont_w

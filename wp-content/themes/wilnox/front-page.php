@@ -9,7 +9,10 @@ get_header();
                 the_content();
             echo '</p>';
         } 
-    } 
+    }
+
+    get_template_part('template-parts/baner');
+
 	echo '<div class="container xl">';
         get_template_part('template-parts/ostatnie_wpisy');
     echo '</div>';

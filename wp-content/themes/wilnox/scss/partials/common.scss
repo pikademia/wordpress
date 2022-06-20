@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*
-Theme Name: Pikademia
-Author: Mateusz 
-Description: Motyw edukacyjny dla szkoły w chmurze
+Theme Name: WILNOX
+Author: Mateusz Wiliński
+Author URI: https://wilnox.pl/
+Description: Motyw edukacyjny wilnox
 Requires at least: 5.9
 Version: 1.0.2
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
@@ -39,6 +39,20 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+  border:2px solid #aaa;
+  margin:30px 0px;
+}
+
+td,tr{
+  border:1px solid #aaa;
+  padding: 10px;
+}
+p{
+  padding: 7px 0px;
+}
+
+.no_padding{
+  padding: 0px;
 }
 
 *{

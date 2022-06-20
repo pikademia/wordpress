@@ -22,8 +22,8 @@ if($the_query -> have_posts()){
                 echo '</a>';
 
                 echo '<div class="last_post_item_thumbnail_cont_date_cont_w">';
-                    echo '<p>'.get_the_date('d').' / '. get_the_date('m') .'</p>';
-                    echo '<p>'.get_the_date('Y').'</p>';
+                    echo '<p class="no_padding">'.get_the_date('d').' / '. get_the_date('m') .'</p>';
+                    echo '<p class="no_padding">'.get_the_date('Y').'</p>';
                 echo '</div>';
 
                 echo '<div class="last_post_item_thumbnail_cont_cat_cont_w">';
