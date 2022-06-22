@@ -12,7 +12,7 @@ echo '<div class="container xl">';
                 echo '</div>';
 
                 echo '<div class="single_info_section_info_cont_w">';
-                    echo '<h1>';
+                    echo '<h1 class="single_title">';
                         the_title();
                     echo '</h1>';
                     echo '<div>Published: '.get_the_date('d / m / Y').'</div>';

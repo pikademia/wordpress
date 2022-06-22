@@ -1,6 +1,6 @@
 <?php
 
-echo '<h2 class="main_section_description_w">HOT ARTICLES</h2>';
+echo '<h2 class="main_section_description_w">LAST ARTICLES</h2>';
 echo '<div class="last_post_section_w">';
 $args = array(
     'post_type' => 'post',

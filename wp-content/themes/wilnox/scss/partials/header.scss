@@ -1,0 +1,43 @@
+/* header */
+
+.header_section{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header_section_logo_section{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .blog_info_name_w{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+  
+  .blog_info_desc_w{
+    line-height: 1.2rem;
+  }
+  
+  
+  .page_title_w{
+    font-size: 2rem;
+    padding: 3rem 0rem;
+  }
+  
+  .custom-logo{
+    max-width:60px;
+    height: auto;
+  }
+
+  @media (max-width: 860px) {
+    .header_section{
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
