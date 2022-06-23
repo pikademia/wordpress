@@ -39,7 +39,7 @@
     padding: 5px 10px;
     font-size: 1rem;
     background-color: #666;
-    color: #eee;
+    color: var(--themeColor2);
 }
 
 .single_info_section_info_cont_tags_cont_w{
@@ -50,7 +50,7 @@
 .single_info_section_info_cont_tags_cont_w span{
     padding: 5px;
     margin: 5px 5px 5px 0px;
-    background-color: #eee;
+    background-color: var(--themeColor2);
     color:#555;
     text-transform: uppercase;
     font-size: 0.8rem;

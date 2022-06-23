@@ -20,6 +20,18 @@
     max-width: 100%;
     height: auto;
 }
+<<<<<<< HEAD
+=======
+.ebook_item_w::before{
+    content:url(img/ebook.png);
+    position: absolute;
+    transform: scale(.7);
+    width:92px;
+    height:122px;
+    right:-22px;
+    top:-25px;
+}
+>>>>>>> bd982522f77789532b75dd54af09980d5aa14d40
 
 .ebook_title a{
     color:var(--themeColor1);
@@ -28,6 +40,7 @@
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 .ebook_image{
     position: absolute;
@@ -41,6 +54,8 @@
     width:100%;
     height: auto;
 }
+=======
+>>>>>>> bd982522f77789532b75dd54af09980d5aa14d40
 @media (max-width: 860px) {
     .ebooks_section_w{
         justify-content: center;

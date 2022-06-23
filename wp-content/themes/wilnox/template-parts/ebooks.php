@@ -14,11 +14,14 @@ if($the_query -> have_posts()){
         $the_query -> the_post();
 
         echo '<div class="ebook_item_w">';
+<<<<<<< HEAD
             if(in_category('ebook')){
                 ?>
             <div class="ebook_image"> <img src="<?php echo get_template_directory_uri() ?>/img/ebook.png" alt="<?php the_title(); ?>" /></div>
             <?php
             }
+=======
+>>>>>>> bd982522f77789532b75dd54af09980d5aa14d40
             echo '<a href="'.get_the_permalink().'">';
                 get_template_part('template-parts/thumbnail');
             echo '</a>'; 
