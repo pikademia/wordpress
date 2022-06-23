@@ -28,9 +28,6 @@ register_nav_menus( array(
 ));
 
 }
-<<<<<<< HEAD
-add_action('after_setup_theme','theme_setup');
-=======
 add_action('after_setup_theme','theme_setup');
 
 function register_shortcodes(){
@@ -97,4 +94,3 @@ add_action( 'init', 'wporg_shortcodes_init' );
 
 
 
->>>>>>> bd982522f77789532b75dd54af09980d5aa14d40
