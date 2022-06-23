@@ -62,16 +62,24 @@ function register_shortcodes_wil(){
     } 
 
 
-    function display_last_articles(){
+    function display_last_articles( $atts = []){
+
+        $w_atts = shortcode_atts(
+            array(
+                'q' => 3,
+                'e' => 'none'
+            ), $atts
+        );
+
         $ret = "";
         $ret .= '<div class="container xl">';
         $ret .= '<div class="last_post_section_w">';
         
         $args = array(
           'post_type' => 'post',
-          'category__not_in' => array(get_cat_ID('ebook')),
+          'category__not_in' => array(get_cat_ID($w_atts['e'])),
           'post_status' => 'publish',
-          'posts_per_page'=>3,
+          'posts_per_page'=>$w_atts['q'],
           'order'=>'DESC'
         );
 
