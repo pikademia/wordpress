@@ -1,2 +1,12 @@
 2022-06-23T06:13:48+00:00 CRITICAL syntax error, unexpected token "<<", expecting end of file in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php on line 31
 
+2022-06-23T06:29:51+00:00 CRITICAL Cannot redeclare add_theme_scripts() (previously declared in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php:3) in C:\xampp\htdocs\wilnox\wp-content\plugins\wilnox-shortcodes\index.php on line 13
+
+2022-06-23T06:29:53+00:00 CRITICAL Cannot redeclare add_theme_scripts() (previously declared in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php:3) in C:\xampp\htdocs\wilnox\wp-content\plugins\wilnox-shortcodes\index.php on line 13
+
+2022-06-23T06:29:53+00:00 CRITICAL Cannot redeclare add_theme_scripts() (previously declared in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php:3) in C:\xampp\htdocs\wilnox\wp-content\plugins\wilnox-shortcodes\index.php on line 13
+
+2022-06-23T07:34:05+00:00 CRITICAL Cannot redeclare wporg_shortcode() (previously declared in C:\xampp\htdocs\wilnox\wp-content\plugins\wilnox-shortcodes\index.php:66) in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php on line 75
+
+2022-06-23T07:35:23+00:00 CRITICAL Cannot redeclare wporg_shortcode() (previously declared in C:\xampp\htdocs\wilnox\wp-content\plugins\wilnox-shortcodes\index.php:66) in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php on line 75
+

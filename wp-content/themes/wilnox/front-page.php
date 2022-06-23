@@ -13,9 +13,9 @@ get_header();
 
 
 
-	echo '<div class="container xl">';
-        get_template_part('template-parts/ostatnie_wpisy');
-    echo '</div>';
+	// echo '<div class="container xl">';
+    //     get_template_part('template-parts/ostatnie_wpisy');
+    // echo '</div>';
 
 
 get_footer();
