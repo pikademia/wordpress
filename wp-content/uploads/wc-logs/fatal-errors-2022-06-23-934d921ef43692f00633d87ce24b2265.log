@@ -10,3 +10,5 @@
 
 2022-06-23T07:35:23+00:00 CRITICAL Cannot redeclare wporg_shortcode() (previously declared in C:\xampp\htdocs\wilnox\wp-content\plugins\wilnox-shortcodes\index.php:66) in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php on line 75
 
+2022-06-23T08:29:08+00:00 CRITICAL Unclosed '{' on line 4 in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\index.php on line 56
+

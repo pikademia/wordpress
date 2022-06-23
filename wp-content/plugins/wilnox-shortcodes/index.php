@@ -69,6 +69,7 @@ function register_shortcodes_wil(){
         
         $args = array(
           'post_type' => 'post',
+          'category__not_in' => array(get_cat_ID('ebook')),
           'post_status' => 'publish',
           'posts_per_page'=>3,
           'order'=>'DESC'
