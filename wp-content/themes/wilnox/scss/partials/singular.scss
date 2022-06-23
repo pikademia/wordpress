@@ -4,14 +4,17 @@
     display: flex;
     gap:40px;
     flex-wrap: nowrap;
-    min-height: 600px;
+    
+}
+.single_info_section_img_w{
+    max-width: 420px;
 }
 
 .single_info_section_img_w img{
-    max-width: 480px;
     width: 100%;
     height: auto;
 }
+
 
 .single_info_section_info_cont_w{
     display: flex;

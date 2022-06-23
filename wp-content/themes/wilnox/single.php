@@ -8,13 +8,15 @@ echo '<div class="container xl">';
 
             echo '<div class="single_info_section_w">';
                 echo '<div class="single_info_section_img_w">';
-                    get_template_part('template-parts/thumbnail');
+                if ( has_post_thumbnail() ) {
+                    the_post_thumbnail();
+                }else{
+                    echo '<img src="'.get_template_directory_uri() .'/img/default_img.jpg" alt="'.get_the_title().'" />';
+                }
                 echo '</div>';
 
                 echo '<div class="single_info_section_info_cont_w">';
-                    echo '<h1 class="single_title">';
-                        the_title();
-                    echo '</h1>';
+                    echo '<h1 class="single_title">'.get_the_title().'</h1>';
                     echo '<div>Published: '.get_the_date('d / m / Y').'</div>';
                     echo '<div class="single_info_section_info_cont_cat_cont_w"> Categories: ';
                         $category_list = get_the_category( $id );
