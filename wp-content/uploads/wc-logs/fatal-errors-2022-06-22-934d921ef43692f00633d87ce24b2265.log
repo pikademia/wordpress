@@ -1,0 +1,4 @@
+2022-06-22T14:38:14+00:00 CRITICAL syntax error, unexpected single-quoted string "order", expecting ")" in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\template-parts\ebooks.php on line 7
+
+2022-06-22T16:54:55+00:00 CRITICAL Unclosed '{' on line 24 in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\template-parts\thumbnail.php on line 29
+

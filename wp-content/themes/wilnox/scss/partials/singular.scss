@@ -4,6 +4,7 @@
     display: flex;
     gap:40px;
     flex-wrap: nowrap;
+    min-height: 600px;
 }
 
 .single_info_section_img_w img{
@@ -18,9 +19,9 @@
     gap: 10px;
 
 }
-.single_info_section_info_cont_w h1{
+.single_title{
     padding-bottom: calc(0.4rem + 0.4vw);
-    color: #aaa;
+    color: var(--themeColor1);
     font-size: calc(1rem + 1vw);
     line-height: calc(1.6rem + 1vw);
     word-wrap: break-word;
@@ -68,8 +69,7 @@
         gap:10px;
         flex-wrap: wrap;
     }
-    .single_info_section_info_cont_w h1{
-        color: #aaa;
+    .single_title{
         font-size: 1.3rem;
         line-height: 2rem;
         padding: 0.2rem 0rem;
