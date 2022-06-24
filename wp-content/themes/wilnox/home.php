@@ -6,6 +6,16 @@ if ( have_posts() ) {
     echo 'Blog';
 
     echo '</div>';
+    echo '<div class="w_categories"><ul>';
+    wp_list_categories(array(
+        'show_count'=> 1,
+        'title_li' => '',
+        'style' => 'list',
+        'hierarchical' => true,
+        'depth' => 1,
+    ));
+    echo '</ul></div>';
+    
     echo '<div class="container xl blog_container">';
 
         while ( have_posts() ) {

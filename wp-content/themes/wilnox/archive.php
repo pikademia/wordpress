@@ -4,8 +4,30 @@ get_header();
 if ( have_posts() ) {
     echo '<div class="container cat_title">';
     single_cat_title();
-
     echo '</div>';
+
+    echo '<div class="w_categories"><ul>';
+    wp_list_categories(array(
+        'show_count'=> 1,
+        'title_li' => '',
+        'style' => 'list',
+        'hierarchical' => true,
+        'depth' => 1,
+    ));
+    echo '</ul></div>';
+
+    echo '<div class="w_subcategories"><ul>';
+
+    $thiscat = get_queried_object();
+    $args = array('parent' => $thiscat->term_id);
+    $categories = get_categories( $args );
+    foreach($categories as $category) { 
+        echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a>'. '('. $category->count . ')</li>';  
+    }
+
+    echo '</ul></div>';
+
+
     echo '<div class="container xl blog_container">';
 
         while ( have_posts() ) {
