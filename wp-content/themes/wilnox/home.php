@@ -2,19 +2,8 @@
 get_header();
 
 if ( have_posts() ) {
-    echo '<div class="container cat_title">';
-    echo 'Blog';
-
-    echo '</div>';
-    echo '<div class="w_categories"><ul>';
-    wp_list_categories(array(
-        'show_count'=> 1,
-        'title_li' => '',
-        'style' => 'list',
-        'hierarchical' => true,
-        'depth' => 1,
-    ));
-    echo '</ul></div>';
+    echo '<div class="container cat_title">Blog</div>';
+    get_template_part( 'template-parts/post_categories_menu', 'post_categories_menu' );
     
     echo '<div class="container xl blog_container">';
 
@@ -24,11 +13,7 @@ if ( have_posts() ) {
             echo '<div class="blog_item_w">';
                 echo '<div class="blog_thumbnail_cont">';
                     echo '<a href="'.get_the_permalink().'">';
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail();
-                        }else{
-                            echo '<img src="'.get_template_directory_uri() .'/img/default_img.jpg" alt="'.get_the_title().'" />';
-                        }
+                    get_template_part( 'template-parts/thumbnail', 'thumbnail' );
                     echo '</a>';
 
                     echo '<div class="blog_thumbnail_date_w">';

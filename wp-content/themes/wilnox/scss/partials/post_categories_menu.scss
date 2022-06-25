@@ -1,0 +1,42 @@
+.post_categories ul, .w_subcategories ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .post_categories ul li{
+    text-decoration: none;
+    padding: 0;
+    margin: 5px 10px;
+    background-color: var(--themeColor1);
+    color: var(--themeColor2);
+  }
+  .post_categories ul li a{
+    color: var(--themeColor2);
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+  }
+  
+  .w_subcategories ul li{
+    text-decoration: none;
+    margin: 4px 8px;
+    background-color: var(--themeColor2);
+    color: var(--themeColor1);
+  }
+  .w_subcategories ul li a{
+    color: var(--themeColor1);
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+  }
+
+@media (max-width: 860px) {
+    .post_categories ul li, .w_subcategories ul li{
+        width: 100%;
+      }
+    .post_categories, .w_subcategories{
+        padding-bottom: 20px;
+    }
+}

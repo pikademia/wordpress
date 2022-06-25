@@ -6,27 +6,19 @@ if ( have_posts() ) {
     single_cat_title();
     echo '</div>';
 
-    echo '<div class="w_categories"><ul>';
-    wp_list_categories(array(
-        'show_count'=> 1,
-        'title_li' => '',
-        'style' => 'list',
-        'hierarchical' => true,
-        'depth' => 1,
-    ));
-    echo '</ul></div>';
+    // echo '<div class="w_categories"><ul>';
+    // wp_list_categories(array(
+    //     'show_count'=> 1,
+    //     'title_li' => '',
+    //     'style' => 'list',
+    //     'hierarchical' => true,
+    //     'depth' => 1,
+    // ));
+    // echo '</ul></div>';
 
-    echo '<div class="w_subcategories"><ul>';
+    
 
-    $thiscat = get_queried_object();
-    $args = array('parent' => $thiscat->term_id);
-    $categories = get_categories( $args );
-    foreach($categories as $category) { 
-        echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a>'. '('. $category->count . ')</li>';  
-    }
-
-    echo '</ul></div>';
-
+    get_template_part( 'template-parts/post_categories_menu', 'post_categories_menu' );
 
     echo '<div class="container xl blog_container">';
 
@@ -36,11 +28,7 @@ if ( have_posts() ) {
             echo '<div class="blog_item_w">';
                 echo '<div class="blog_thumbnail_cont">';
                     echo '<a href="'.get_the_permalink().'">';
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail();
-                        }else{
-                            echo '<img src="'.get_template_directory_uri() .'/img/default_img.jpg" alt="'.get_the_title().'" />';
-                        }
+                    get_template_part( 'template-parts/thumbnail', 'thumbnail' );
                     echo '</a>';
 
                     echo '<div class="blog_thumbnail_date_w">';

@@ -71,40 +71,9 @@ p{
 .container{
   margin: 0 auto;
 }
-.w_categories{
-  padding: 20px 0px;
+.post-views{
+  padding-top: 30px;
 }
-.w_categories ul, .w_subcategories ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.w_categories ul li{
-  text-decoration: none;
-  padding: 15px;
-  margin: 5px 10px;
-  background-color: var(--themeColor1);
-  color: var(--themeColor2);
-}
-.w_categories ul li a{
-  color: var(--themeColor2);
-  text-decoration: none;
-}
-
-.w_subcategories ul li{
-  text-decoration: none;
-  padding: 12px;
-  margin: 4px 8px;
-  background-color: var(--themeColor2);
-  color: var(--themeColor1);
-}
-.w_subcategories ul li a{
-  color: var(--themeColor1);
-  text-decoration: none;
-}
-
 
 @media (max-width: 1279px) {
   .container{

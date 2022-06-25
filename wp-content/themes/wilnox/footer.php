@@ -2,14 +2,26 @@
 ?>
 
 <div class="container footer">
-    <p>WILNOX</p>
-    <p>Best quality online courses and tutorials</p>
+<?php
 
-    <?php
-    if ( function_exists( 'the_custom_logo' ) ) {
-        the_custom_logo();
+$args = array(
+    'post_type ' => 'page',
+    'post_status' => 'draft',
+    'pagename' => 'footer'
+);
+
+$the_query = new WP_Query($args);
+if($the_query -> have_posts()){
+    while($the_query -> have_posts()){
+        $the_query -> the_post();
+        the_content();
     }
-    ?>
+}
+wp_reset_postdata();
+
+
+
+?>
 
 </div>
 
