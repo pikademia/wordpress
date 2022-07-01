@@ -55,15 +55,17 @@ if ( have_posts() ) {
                 echo '</div>';
             echo '</div>';
         } 
+        echo '<div class="pagination">';
+        wpbeginner_numeric_posts_nav(); 
+        echo '</div>';
+        
         echo '</div>';
         echo '<div class="sidebar">';
         get_template_part( 'template-parts/sidebar', 'sidebar' );
         echo '</div>';
     echo '</div>'; // end container
-    
-    echo '<div class="pagination">';
-    wpbeginner_numeric_posts_nav(); 
-    echo '</div>';
+
+
 }        
 
 

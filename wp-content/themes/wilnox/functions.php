@@ -96,8 +96,8 @@ function wpbeginner_numeric_posts_nav() {
     }
   
     /** Next Post Link */
-    if ( get_next_posts_link() )
-        printf( '<li>%s</li>' . "\n", get_next_posts_link() );
+    // if ( get_next_posts_link() )
+    //     printf( '<li>%s</li>' . "\n", get_next_posts_link() );
   
     echo '</ul></div>' . "\n";
   

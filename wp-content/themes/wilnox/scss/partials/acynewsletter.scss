@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+
+#acym_fulldiv_formAcym1.acym__subscription__form__shortcode{
+
+    width: 100% !important;
+    background: none !important;
+}
+.acyfield_text input{
+    min-width: 300px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid $themeColor1;
+}
+
+#acym_fulldiv_formAcym1 .acym__subscription__form__button button{
+    background-color: $themeColor1 !important;
+}
