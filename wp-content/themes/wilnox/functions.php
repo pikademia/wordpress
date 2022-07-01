@@ -20,6 +20,7 @@ function theme_setup(){
 ) );
 add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
 add_theme_support( 'title-tag' );
+add_theme_support( 'woocommerce' );
 add_theme_support('menus');
 
 register_nav_menus( array(

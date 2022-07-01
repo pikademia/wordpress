@@ -1,6 +1,5 @@
 <?php
 ?>
-
 <div class="container footer">
 <?php
 

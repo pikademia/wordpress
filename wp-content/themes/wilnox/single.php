@@ -51,41 +51,41 @@ echo '</div>'; // end container
 
 
 // random posts from category
-echo '<div class="rand_posts_cont">';
+// echo '<div class="rand_posts_cont">';
 
-$post = get_post();
-if($post){
-    $categories = get_the_category($post->ID);
-} 
+// $post = get_post();
+// if($post){
+//     $categories = get_the_category($post->ID);
+// } 
 
-$args = array(
-    'post_type' => 'post',
-    'category_name' => $categories[0]->name,
-    'orderby'   => 'rand',
-    'posts_per_page' => 4, 
-    );
+// $args = array(
+//     'post_type' => 'post',
+//     'category_name' => $categories[0]->name,
+//     'orderby'   => 'rand',
+//     'posts_per_page' => 4, 
+//     );
  
-$the_query2 = new WP_Query( $args );
-$string = '<h2 class="random_articles_prop_title">MORE ARTICLES </H2>'; 
-if ( $the_query2->have_posts() ) {
+// $the_query2 = new WP_Query( $args );
+// $string = '<h2 class="random_articles_prop_title">MORE ARTICLES </H2>'; 
+// if ( $the_query2->have_posts() ) {
  
-$string .= '<div class="random_articles_prop">';
-    while ( $the_query2->have_posts() ) {
-        $the_query2->the_post();
-        $string .= '<div>';
-        if ( has_post_thumbnail() ) {
-            $string .= '<a href="'. get_permalink() .'">'. get_the_post_thumbnail() .'</a>';
-        }else{
-            $string .= '<a href="'. get_permalink() .'">'.'<img src="'.get_template_directory_uri() .'/img/default_img.jpg" alt="'.get_the_title().'" />'.'</a>';
-        }
-        $string .= '<h3><a href="'. get_permalink() .'">'. get_the_title() .'</a></h3>';
-        $string .= '</div>';
-    }
-    $string .= '</div>';
-    wp_reset_postdata();
-}
-echo $string;
-echo '</div>';
-echo '<h2 class="thanks_for_reading">Thanks for reading. Hope you found it useful! ;)</h2>';
+// $string .= '<div class="random_articles_prop">';
+//     while ( $the_query2->have_posts() ) {
+//         $the_query2->the_post();
+//         $string .= '<div>';
+//         if ( has_post_thumbnail() ) {
+//             $string .= '<a href="'. get_permalink() .'">'. get_the_post_thumbnail() .'</a>';
+//         }else{
+//             $string .= '<a href="'. get_permalink() .'">'.'<img src="'.get_template_directory_uri() .'/img/default_img.jpg" alt="'.get_the_title().'" />'.'</a>';
+//         }
+//         $string .= '<h3><a href="'. get_permalink() .'">'. get_the_title() .'</a></h3>';
+//         $string .= '</div>';
+//     }
+//     $string .= '</div>';
+//     wp_reset_postdata();
+// }
+// echo $string;
+// echo '</div>';
+// echo '<h2 class="thanks_for_reading">Thanks for reading. Hope you found it useful! ;)</h2>';
 
 get_footer();

@@ -1,4 +1,4 @@
-
+@forward 'variables';
 @forward 'blog';
 @forward 'common';
 @forward 'footer';
@@ -7,4 +7,5 @@
 @forward 'mainmenu';
 @forward 'post_categories_menu';
 @forward 'singular';
+@forward 'woocommerce';
 
