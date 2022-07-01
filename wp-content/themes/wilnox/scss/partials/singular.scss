@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .single_info_section_w{
     padding-top: 50px;
     padding-bottom: 70px;
@@ -25,7 +27,7 @@
 }
 .single_title{
     padding-bottom: calc(0.4rem + 0.4vw);
-    color: var(--themeColor1);
+    color: $themeColor1;
     font-size: calc(1rem + 1vw);
     line-height: calc(1.6rem + 1vw);
     word-wrap: break-word;
@@ -43,8 +45,8 @@
     text-decoration: none;
     padding: 5px 10px;
     font-size: 1rem;
-    background-color: #666;
-    color: var(--themeColor2);
+    background-color: $themeColor3;
+    color: $themeColor2;
 }
 
 .single_info_section_info_cont_tags_cont_w{
@@ -55,19 +57,19 @@
 .single_info_section_info_cont_tags_cont_w span{
     padding: 5px;
     margin: 5px 5px 5px 0px;
-    background-color: var(--themeColor2);
-    color:#555;
+    background-color: $themeColor2;
+    color:$themeColor4;
     text-transform: uppercase;
     font-size: 0.8rem;
     display: inline-block;
 }
 
 .single_main_content_w {
-    color: #555;
+    color: $themeColor4;
 }
 
 .rand_posts_cont{
-    background-color: rgb(49, 49, 49);
+    background-color: $themeColor4;
     padding:30px;
 }
 .random_articles_prop{
@@ -78,7 +80,7 @@
 }
 
 .random_articles_prop a{
-    color:var(--themeColor2);
+    color:$themeColor2;
 }
 
 .random_articles_prop div{
@@ -95,17 +97,17 @@
 .random_articles_prop_title{
     text-align: center;
     padding: 20px 10px;
-    color:var(--themeColor1);
+    color:$themeColor1;
 }
 
 .thanks_for_reading{
     text-align: center;
-    color: var(--themeColor2);
+    color: $themeColor2;
     padding-top: 30px;
     font-size: 1.4rem;
 }
     
-@media (max-width: 860px) {
+@media (max-width: $breakpointTablet) {
     .single_info_section_w{
         flex-direction: column;
         align-items: stretch;

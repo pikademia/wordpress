@@ -1,11 +1,11 @@
-
+@use 'variables' as *;
 
 .container.cat_title{
     text-align: center;
     padding: 3rem 0rem;
     font-size: 2.4rem;
-    background-color: var(--themeColor1);
-    color: var(--themeColor2);
+    background-color: $themeColor1;
+    color: $themeColor2;
     margin: 3rem 0rem;
   }
   
@@ -51,10 +51,10 @@
     justify-content: center;
     gap: 10px;
     padding: 5px;
-    background-color: #444;
-    color: var(--themeColor2);
+    background-color: $themeColor3;
+    color: $themeColor2;
     font-weight: 600;
-    border: 1px solid var(--themeColor1);
+    border: 1px solid $themeColor1;
 }
 
 .blog_thumbnail_date_w p:nth-of-type(1){
@@ -67,7 +67,7 @@
 
 .blog_info_cont_w a{
     text-decoration: none;
-    color: var(--themeColor1);
+    color: $themeColor1;
     font-weight: 600;
     font-size: calc(0.7rem + 1vw);
     line-height: calc(1.4rem + 1vw);
@@ -85,11 +85,11 @@
 .blog_info_cont_cat_w .cat_item_w a{
     padding: 7px;
     font-size: 0.8rem;
-    background-color: var(--themeColor1);
-    color: var(--themeColor2);
+    background-color: $themeColor1;
+    color: $themeColor2;
 }
 
-@media (max-width: 860px) {
+@media (max-width: $breakpointTablet) {
     .blog_container{
         gap: 4rem;
         align-items: center;

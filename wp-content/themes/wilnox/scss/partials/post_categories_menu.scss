@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .post_categories ul, .w_subcategories ul{
     display: flex;
     flex-wrap: wrap;
@@ -9,11 +11,11 @@
     text-decoration: none;
     padding: 0;
     margin: 5px 10px;
-    background-color: var(--themeColor1);
-    color: var(--themeColor2);
+    background-color: $themeColor1;
+    color: $themeColor2;
   }
   .post_categories ul li a{
-    color: var(--themeColor2);
+    color: $themeColor2;
     text-decoration: none;
     display: block;
     padding: 12px;
@@ -22,17 +24,17 @@
   .w_subcategories ul li{
     text-decoration: none;
     margin: 4px 8px;
-    background-color: var(--themeColor2);
-    color: var(--themeColor1);
+    background-color: $themeColor2;
+    color: $themeColor1;
   }
   .w_subcategories ul li a{
-    color: var(--themeColor1);
+    color: $themeColor1;
     text-decoration: none;
     display: block;
     padding: 8px;
   }
 
-@media (max-width: 860px) {
+@media (max-width: $breakpointTablet) {
     .post_categories ul li, .w_subcategories ul li{
         width: 100%;
       }

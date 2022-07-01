@@ -1,4 +1,4 @@
-/* header */
+@use 'variables' as *;
 
 .header_section{
     padding-top: 20px;
@@ -35,7 +35,7 @@
     height: auto;
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: $breakpointTablet) {
     .header_section{
       justify-content: center;
       flex-wrap: wrap;

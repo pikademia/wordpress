@@ -1,13 +1,15 @@
+@use 'variables' as *;
+
 .footer{
-    background-color: #333;
-    color: var(--themeColor2);
+    background-color: $themeColor4;
+    color: $themeColor2;
     border-top: 3px solid #666;
     margin-top: 50px;
     padding: 30px 0px;
 }
 
 .footer a{
-    color:var(--themeColor1)
+    color:$themeColor1;
 }
 .footer p{
     text-align: center;

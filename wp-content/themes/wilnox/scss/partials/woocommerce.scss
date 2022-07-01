@@ -40,6 +40,36 @@
 	background-color: $themeColor1;
 }
 
+// cart
+
+
+.woocommerce a.remove{
+	width:2rem;
+	height: 2rem;
+}
+
+#add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text{
+	min-width: 150px;
+}
+
+.woocommerce-message{
+	border-top-color: $themeColor1;
+}
+
+.woocommerce .cart-collaterals .cart_totals h2{
+	padding: 10px 0;
+}
+
+// checkout
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea{
+	min-height:3rem;
+	border:1px solid #ccc;
+	padding: 2px 0 2px 10px;
+	font-size: 1.1rem;
+	color:$themeColor1;
+}
+
 
 
 
