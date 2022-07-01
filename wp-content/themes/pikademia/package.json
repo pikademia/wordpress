@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "sass": "^1.51.0"
+  },
+  "scripts" : {
+    "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
+  }
+}

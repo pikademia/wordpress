@@ -1,0 +1,134 @@
+@use 'variables' as *;
+
+.single_info_section_w{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    display: flex;
+    gap:40px;
+    flex-wrap: nowrap;
+    
+}
+.single_info_section_img_w{
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.single_info_section_img_w img{
+    width: 100%;
+    height: auto;
+}
+
+
+.single_info_section_info_cont_w{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.single_title{
+    padding-bottom: calc(0.4rem + 0.4vw);
+    color: $themeColor1;
+    font-size: calc(1rem + 1vw);
+    line-height: calc(1.6rem + 1vw);
+    word-wrap: break-word;
+}
+
+.single_info_section_info_cont_cat_cont_w{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    padding-top: calc(0.4rem + 1vw);
+}
+
+
+.single_info_section_info_cont_cat_cont_w .cat_item_w a{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: $themeColor3;
+    color: $themeColor2;
+}
+
+.single_info_section_info_cont_tags_cont_w{
+    padding-top: calc(0.4rem + 1vw);
+    
+}
+
+.single_info_section_info_cont_tags_cont_w span{
+    padding: 5px;
+    margin: 5px 5px 5px 0px;
+    background-color: $themeColor2;
+    color:$themeColor4;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: inline-block;
+}
+
+.single_main_content_w {
+    color: $themeColor4;
+}
+
+.rand_posts_cont{
+    background-color: $themeColor4;
+    padding:30px;
+}
+.random_articles_prop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.random_articles_prop a{
+    color:$themeColor2;
+}
+
+.random_articles_prop div{
+   max-width: 320px;
+   overflow: hidden;
+   height: auto;
+   text-align: center;
+}
+
+.random_articles_prop div img{
+    width: 100%;
+    height: auto;
+}
+.random_articles_prop_title{
+    text-align: center;
+    padding: 20px 10px;
+    color:$themeColor1;
+}
+
+.thanks_for_reading{
+    text-align: center;
+    color: $themeColor2;
+    padding-top: 30px;
+    font-size: 1.4rem;
+}
+    
+@media (max-width: $breakpointTablet) {
+    .single_info_section_w{
+        flex-direction: column;
+        align-items: stretch;
+        gap:10px;
+        flex-wrap: wrap;
+    }
+
+
+    .single_title{
+        font-size: 1.3rem;
+        line-height: 2rem;
+        padding: 0.2rem 0rem;
+    }
+    .single_info_section_info_cont_w{
+        gap: 10px;
+    }
+    .single_info_section_info_cont_cat_cont_w{
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+    }
+    .single_info_section_info_cont_tags_cont_w{
+        padding-top: 0.4rem;
+    }
+}

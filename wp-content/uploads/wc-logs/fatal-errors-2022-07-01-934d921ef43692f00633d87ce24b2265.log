@@ -1,0 +1,10 @@
+2022-07-01T18:03:22+00:00 CRITICAL syntax error, unexpected token "echo" in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\home.php on line 48
+
+2022-07-01T18:45:13+00:00 CRITICAL Unclosed '{' on line 4 in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\archive.php on line 73
+
+2022-07-01T19:04:58+00:00 CRITICAL syntax error, unexpected integer "3" in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\functions.php on line 39
+
+2022-07-01T19:05:23+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\home.php on line 50
+
+2022-07-01T19:06:02+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wilnox\wp-content\themes\wilnox\home.php on line 50
+

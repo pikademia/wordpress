@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+.post_categories ul, .w_subcategories ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .post_categories ul li{
+    text-decoration: none;
+    width: 100%;
+    padding: 0;
+    margin: 5px 10px;
+    background-color: $themeColor1;
+    color: $themeColor2;
+  }
+  .post_categories ul li a{
+    color: $themeColor2;
+    text-decoration: none;
+    display: block;
+    padding: 12px;
+  }
+  
+  .w_subcategories ul li{
+    text-decoration: none;
+    margin: 4px 8px;
+    background-color: $themeColor2;
+    color: $themeColor1;
+    width: 100%;
+  }
+  .w_subcategories ul li a{
+    color: $themeColor1;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+  }
+
+@media (max-width: $breakpointTablet) {
+    .post_categories ul li, .w_subcategories ul li{
+        width: 100%;
+      }
+    .post_categories, .w_subcategories{
+        padding-bottom: 20px;
+    }
+}

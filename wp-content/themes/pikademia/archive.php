@@ -16,10 +16,11 @@ if ( have_posts() ) {
     // ));
     // echo '</ul></div>';
 
+    
 
+    get_template_part( 'template-parts/post_categories_menu', 'post_categories_menu' );
 
     echo '<div class="container xl blog_container">';
-    echo '<div class="blog_items">';
 
         while ( have_posts() ) {
             the_post();
@@ -41,7 +42,7 @@ if ( have_posts() ) {
                     echo '<p><a href="'.get_the_permalink().'">';
                         the_title();
                     echo '</a></p>';
-                    echo '<p>'.substr(get_the_excerpt(), 0, 200).'...</p>';   
+                    echo '<p>'.substr(get_the_excerpt(), 0, 300).'...</p>';   
                     echo '<div class="blog_info_cont_cat_w">';
                     $category_list = get_the_category( $id );
                     foreach ($category_list as $cat){
@@ -55,15 +56,7 @@ if ( have_posts() ) {
                 echo '</div>';
             echo '</div>';
         } 
-        echo '</div>';
-        echo '<div class="sidebar">';
-        get_template_part( 'template-parts/sidebar', 'sidebar' );
-        echo '</div>';
     echo '</div>'; // end container
-    
-    echo '<div class="pagination">';
-    wpbeginner_numeric_posts_nav(); 
-    echo '</div>';
 }        
 
 

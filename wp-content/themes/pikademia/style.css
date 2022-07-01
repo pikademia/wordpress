@@ -2,7 +2,7 @@
 .container.cat_title {
   text-align: center;
   padding: 3rem 0rem;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
   background-color: #3399cc;
   color: rgb(211, 211, 211);
   margin: 3rem 0rem;
@@ -11,41 +11,27 @@
 .blog_container {
   padding-top: 2rem;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 3%;
+  gap: 2rem;
 }
 
 .blog_container > h1 {
   font-size: calc(0.8rem + 1vw);
 }
 
-.blog_items {
-  width: 70%;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.sidebar {
-  width: 22%;
-}
-
 .blog_item_w {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 30px;
 }
 
 .blog_thumbnail_cont {
   position: relative;
   width: 420px;
   overflow: hidden;
-  min-width: 300px;
-  flex: 1 1 30%;
+  min-width: 420px;
 }
 
 .blog_thumbnail_cont img {
@@ -80,16 +66,12 @@
   margin-top: -0.2rem;
 }
 
-.blog_info_cont_w {
-  flex: 1 1 70%;
-}
-
 .blog_info_cont_w a {
   text-decoration: none;
   color: #3399cc;
   font-weight: 600;
-  font-size: calc(0.6rem + 0.8vw);
-  line-height: calc(1.1rem + 0.8vw);
+  font-size: calc(0.7rem + 1vw);
+  line-height: calc(1.4rem + 1vw);
 }
 
 .blog_info_cont_w p {
@@ -109,87 +91,33 @@
   color: rgb(211, 211, 211);
 }
 
-@media (max-width: 1080px) {
-  .blog_info_cont_cat_w {
-    display: none;
-  }
-  .blog_thumbnail_cont {
-    min-width: 200px;
-    flex: 1 1 20%;
-  }
-  .blog_info_cont_w {
-    flex: 1 1 80%;
-  }
-}
 @media (max-width: 860px) {
-  .blog_items {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
   .blog_container {
     gap: 4rem;
     align-items: center;
-    flex-direction: column;
   }
   .blog_item_w {
-    width: 100%;
-    gap: 10px;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
   }
   .blog_thumbnail_cont a {
     font-size: 1.4rem;
     line-height: 1.8rem;
   }
   .blog_thumbnail_cont {
-    min-width: 220px;
+    min-width: 320px;
     width: auto;
   }
   .blog_info_cont_cat_w {
     display: none;
-  }
-}
-@media (max-width: 600px) {
-  .blog_items {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
-  .blog_container {
-    gap: 4rem;
-    align-items: center;
-    flex-direction: column;
-  }
-  .blog_item_w {
-    width: 100%;
-    gap: 5px;
-    flex-direction: column;
-    border: 1px solid rgb(211, 211, 211);
-    padding: 10px;
-  }
-  .blog_thumbnail_cont a {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-  }
-  .blog_thumbnail_cont {
-    min-width: 240px;
-    width: auto;
-    display: none;
-  }
-  .blog_info_cont_cat_w {
-    display: none;
-  }
-  .blog_info_cont_w p a:nth-child(1) {
-    text-align: center;
-    font-size: 1.2rem;
   }
 }
 /*
-Theme Name: WILNOX
+Theme Name: PIKADEMIA
 Author: Mateusz Wiliński
 Author URI: https://wilnox.com/
-Description: Wilnox Academy Theme
+Description: Pikademia Theme
 Requires at least: 5.9
 Version: 1.0.4
 License: GNU General Public License v2 or later
@@ -327,7 +255,7 @@ p {
   height: auto;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 860px) {
   .header_section {
     justify-content: center;
     flex-wrap: wrap;
@@ -344,7 +272,7 @@ p {
 
 .menu-item a {
   position: relative;
-  padding: 10px 20px;
+  padding: 20px 20px;
   margin: 10px 20px;
   color: #3399cc;
   text-decoration: none;
@@ -400,13 +328,13 @@ p {
   height: 95%;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 860px) {
   .menu-item a {
     line-height: 3rem;
     max-width: 3.4rem;
     max-height: 3.4rem;
     overflow: hidden;
-    padding: 10px 15px;
+    padding: 10px 10px;
     margin: 0px 5px;
     font-size: 1.4rem;
   }
@@ -415,50 +343,15 @@ p {
     font-size: 2.2rem;
   }
 }
-.pagination {
-  padding-top: 60px;
-  width: 100%;
-  text-align: center;
-}
-
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-  color: #fff;
-  text-decoration: none;
-}
-
-.navigation li {
-  display: inline;
-}
-
-.navigation li a,
-.navigation li a:hover,
-.navigation li.active a,
-.navigation li.disabled {
-  background-color: #6FB7E9;
-  border-radius: 3px;
-  cursor: pointer;
-  padding: 12px;
-  padding: 0.75rem;
-}
-
-.navigation li a:hover,
-.navigation li.active a {
-  background-color: #3C8DC5;
-}
-
 .post_categories ul, .w_subcategories ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .post_categories ul li {
   text-decoration: none;
-  width: 100%;
   padding: 0;
   margin: 5px 10px;
   background-color: #3399cc;
@@ -477,7 +370,6 @@ p {
   margin: 4px 8px;
   background-color: rgb(211, 211, 211);
   color: #3399cc;
-  width: 100%;
 }
 
 .w_subcategories ul li a {
@@ -487,7 +379,7 @@ p {
   padding: 8px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 860px) {
   .post_categories ul li, .w_subcategories ul li {
     width: 100%;
   }
@@ -601,7 +493,7 @@ p {
   font-size: 1.4rem;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 860px) {
   .single_info_section_w {
     flex-direction: column;
     align-items: stretch;
@@ -690,7 +582,7 @@ p {
   color: #3399cc;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 860px) {
   .wc-block-grid__product {
     border: 0px solid #3399cc;
     margin-top: 50px;
