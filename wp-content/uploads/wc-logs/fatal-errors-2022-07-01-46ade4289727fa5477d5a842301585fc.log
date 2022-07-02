@@ -1,0 +1,2 @@
+2022-07-01T16:19:00+00:00 CRITICAL Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) w /home/fibee2/domains/pikademia.pl/public_html/wp-includes/functions.php w linii 4540
+

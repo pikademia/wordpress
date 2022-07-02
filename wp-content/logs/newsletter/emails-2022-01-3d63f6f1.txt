@@ -1,0 +1,16 @@
+17-01-2022 14:15:30 - ERROR - 7.3.5 - 50,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:15:30 - ERROR - 7.3.5 - 50,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:15:30 - ERROR - 7.3.5 - 43,6 MB/128 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:15:30 - ERROR - 7.3.5 - 43,6 MB/128 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:15:43 - ERROR - 7.3.5 - 49,1 MB/128 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:15:45 - ERROR - 7.3.5 - 49,1 MB/128 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:16:04 - ERROR - 7.3.5 - 50,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:16:04 - ERROR - 7.3.5 - 50,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:16:05 - ERROR - 7.3.5 - 50,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:16:05 - ERROR - 7.3.5 - 50,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:28:16 - ERROR - 7.3.5 - 52,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:28:16 - ERROR - 7.3.5 - 52,6 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:39:43 - ERROR - 7.3.5 - 49,2 MB/128 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:39:43 - ERROR - 7.3.5 - 49,2 MB/128 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 
+17-01-2022 14:47:42 - ERROR - 7.3.5 - 44,5 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails (1) - 
+17-01-2022 14:47:42 - ERROR - 7.3.5 - 44,5 MB/256 MB - matineoHQ0 > Missing block.php file in /home/fibee2/domains/pikademia.pl/public_html/wp-content/plugins/newsletter/emails/blocks (1) - 

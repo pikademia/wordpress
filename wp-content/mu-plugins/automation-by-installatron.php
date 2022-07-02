@@ -22,4 +22,3 @@ function installatron_filter_site_status_tests($tests) {
 	return $tests;
 }
 add_filter('site_status_tests', 'installatron_filter_site_status_tests');
-

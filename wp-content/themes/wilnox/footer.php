@@ -1,6 +1,7 @@
 <?php
 ?>
 <div class="container footer">
+    
 <?php
 
 $args = array(
@@ -14,6 +15,7 @@ if($the_query -> have_posts()){
     while($the_query -> have_posts()){
         $the_query -> the_post();
         the_content();
+
     }
 }
 wp_reset_postdata();

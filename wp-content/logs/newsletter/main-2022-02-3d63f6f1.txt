@@ -1,0 +1,4 @@
+19-02-2022 03:50:46 - ERROR - 7.3.9 - 32,6 MB/256 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by /home/fibee2/domains/pikademia.pl/public_html/;s14.hekko.net.pl
+23-02-2022 16:26:50 - ERROR - 7.3.9 - 34,0 MB/128 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by /home/fibee2/domains/pikademia.pl/public_html/;s14.hekko.net.pl
+23-02-2022 16:26:50 - ERROR - 7.3.9 - 34,0 MB/128 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by /home/fibee2/domains/pikademia.pl/public_html/;s14.hekko.net.pl
+23-02-2022 21:58:39 - ERROR - 7.3.9 - 33,2 MB/256 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by /home/fibee2/domains/pikademia.pl/public_html/;s14.hekko.net.pl

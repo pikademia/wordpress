@@ -14,13 +14,15 @@
   background-color: #3399cc !important;
 }
 
-.container.cat_title {
+.cat_title {
+  display: block;
+  width: 90%;
   text-align: center;
   padding: 3rem 0rem;
   font-size: 2.3rem;
-  background-color: #3399cc;
-  color: rgb(211, 211, 211);
-  margin: 3rem 0rem;
+  color: rgb(85, 85, 85);
+  margin: 1rem auto 6rem auto;
+  border-bottom: 6px solid #3399cc;
 }
 
 .blog_container {
@@ -28,145 +30,53 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 3%;
+  gap: 5%;
 }
 
-.blog_container > h1 {
-  font-size: calc(0.8rem + 1vw);
-}
-
-.blog_items {
+.blog_items_w {
   width: 70%;
-  padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-.sidebar {
-  width: 22%;
+  gap: 30px;
 }
 
 .blog_item_w {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.blog_thumbnail_cont {
-  position: relative;
-  width: 420px;
+  border-bottom: 6px solid rgb(211, 211, 211);
   overflow: hidden;
-  min-width: 300px;
-  flex: 1 1 30%;
 }
 
-.blog_thumbnail_cont img {
-  max-width: 100%;
-  height: auto;
+.blog_item_date_w {
+  text-align: right;
+  color: rgb(85, 85, 85);
 }
 
-.blog_thumbnail_date_w {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 64px;
-  height: 64px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 5px;
-  background-color: rgb(85, 85, 85);
-  color: rgb(211, 211, 211);
-  font-weight: 600;
-  border: 1px solid #3399cc;
+.blog_item_title_w {
+  font-size: 1.4rem;
+  padding-bottom: 15px;
 }
 
-.blog_thumbnail_date_w p:nth-of-type(1) {
-  font-size: 0.8rem;
-}
-
-.blog_thumbnail_date_w p:nth-of-type(2) {
-  font-size: 1.2rem;
-  margin-top: -0.2rem;
-}
-
-.blog_info_cont_w {
-  flex: 1 1 70%;
-}
-
-.blog_info_cont_w a {
+.blog_item_title_w a {
   text-decoration: none;
   color: #3399cc;
-  font-weight: 600;
-  font-size: calc(0.6rem + 0.8vw);
-  line-height: calc(1.1rem + 0.8vw);
 }
 
-.blog_info_cont_w p {
-  padding-bottom: calc(0.5rem + 0.3vw);
+.blog_item_excerpt_w {
+  padding-bottom: 20px;
 }
 
-.blog_info_cont_cat_w {
-  display: flex;
-  gap: 4px;
-  padding-top: calc(0.6rem + 0.3vw);
+.sidebar {
+  width: 25%;
 }
 
-.blog_info_cont_cat_w .cat_item_w a {
-  padding: 7px;
-  font-size: 0.8rem;
-  background-color: #3399cc;
-  color: rgb(211, 211, 211);
-}
-
-@media (max-width: 1080px) {
-  .blog_info_cont_cat_w {
-    display: none;
-  }
-  .blog_thumbnail_cont {
-    min-width: 200px;
-    flex: 1 1 20%;
-  }
-  .blog_info_cont_w {
-    flex: 1 1 80%;
-  }
-}
-@media (max-width: 860px) {
-  .blog_items {
-    width: 100%;
-  }
-  .sidebar {
-    width: 100%;
-  }
-  .blog_container {
-    gap: 4rem;
-    align-items: center;
-    flex-direction: column;
-  }
-  .blog_item_w {
-    width: 100%;
-    gap: 10px;
-  }
-  .blog_thumbnail_cont a {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-  }
-  .blog_thumbnail_cont {
-    min-width: 220px;
-    width: auto;
-  }
-  .blog_info_cont_cat_w {
-    display: none;
-  }
-}
 @media (max-width: 600px) {
-  .blog_items {
-    width: 100%;
+  .cat_title {
+    font-size: 2rem;
+    margin: 1rem auto 4rem auto;
+    border-bottom: 6px solid #3399cc;
+  }
+  .blog_items_w {
+    width: 90%;
+    gap: 30px;
   }
   .sidebar {
     width: 100%;
@@ -175,29 +85,6 @@
     gap: 4rem;
     align-items: center;
     flex-direction: column;
-  }
-  .blog_item_w {
-    width: 100%;
-    gap: 5px;
-    flex-direction: column;
-    border: 1px solid rgb(211, 211, 211);
-    padding: 10px;
-  }
-  .blog_thumbnail_cont a {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-  }
-  .blog_thumbnail_cont {
-    min-width: 240px;
-    width: auto;
-    display: none;
-  }
-  .blog_info_cont_cat_w {
-    display: none;
-  }
-  .blog_info_cont_w p a:nth-child(1) {
-    text-align: center;
-    font-size: 1.2rem;
   }
 }
 /*
@@ -206,7 +93,7 @@ Author: Mateusz Wiliński
 Author URI: https://wilnox.com/
 Description: Wilnox Academy Theme
 Requires at least: 5.9
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v2 or later
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
@@ -270,15 +157,23 @@ p {
   padding-top: 30px;
 }
 
+.distance {
+  height: 100px;
+}
+
 @media (max-width: 1279px) {
   .container {
     padding: 0 1rem;
   }
 }
+.wcpt-table-scroll-wrapper-outer {
+  padding-top: 40px;
+}
+
 .footer {
   background-color: rgb(36, 36, 36);
   color: rgb(211, 211, 211);
-  border-top: 3px solid #666;
+  border-top: 3px solid rgb(85, 85, 85);
   margin-top: 50px;
   padding: 30px 0px;
 }
@@ -370,52 +265,11 @@ p {
   display: inline-block;
 }
 
-.menu-item a:hover {
-  background-color: #3399cc;
-  color: rgb(36, 36, 36);
-  box-shadow: 0 0 50px #3399cc;
-  transition-delay: 0.2s;
-}
-
-.menu-item a:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-top: 2px solid #3399cc;
-  border-left: 2px solid #3399cc;
-  transition: 0.5s;
-}
-
 .current_page_item {
   filter: saturate(0);
 }
 
-.menu-item a:hover:before {
-  width: 95%;
-  height: 95%;
-}
-
-.menu-item a:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 10px;
-  height: 10px;
-  border-bottom: 2px solid #3399cc;
-  border-right: 2px solid #3399cc;
-  transition: 0.5s;
-}
-
-.menu-item a:hover:after {
-  width: 95%;
-  height: 95%;
-}
-
-@media (max-width: 1080px) {
+@media (max-width: 860px) {
   .menu-item a {
     line-height: 3rem;
     max-width: 3.4rem;
@@ -428,6 +282,28 @@ p {
   .main_menu .ti {
     display: block;
     font-size: 2.2rem;
+  }
+  .menu-item a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #3399cc;
+    border-left: 2px solid #3399cc;
+    transition: 0.5s;
+  }
+  .menu-item a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #3399cc;
+    border-right: 2px solid #3399cc;
+    transition: 0.5s;
   }
 }
 .pagination {
@@ -639,6 +515,10 @@ p {
     padding-top: 0.4rem;
   }
 }
+.tutor-wrap {
+  padding-top: 100px;
+}
+
 .wc-block-grid__products {
   max-width: 1200px;
   margin: 0 auto;
@@ -650,16 +530,34 @@ p {
 }
 
 .wc-block-grid__product {
-  border: 1px solid rgb(211, 211, 211);
   margin: 1%;
+  padding: 0;
+}
+
+.wc-block-grid__product a {
+  width: 100%;
+  height: auto;
+}
+
+.wc-block-grid__products .wc-block-grid__product-image img {
+  width: 100%;
+}
+
+.wp-block-button__link {
+  border-radius: 5px;
+}
+
+.wc-block-grid__product .wc-block-grid__product-add-to-cart, .wc-block-grid__product .wc-block-grid__product-onsale, .wc-block-grid__product .wc-block-grid__product-price, .wc-block-grid__product .wc-block-grid__product-rating {
+  margin: 0;
+}
+
+.wc-block-grid__product-price {
+  padding: 0 0 20px 0;
+  color: rgb(85, 85, 85);
 }
 
 .wc-block-grid__product-title {
   color: #3399cc;
-}
-
-.wc-block-grid__product {
-  padding: 20px;
 }
 
 .wc-block-grid.has-3-columns .wc-block-grid__product, .wc-block-grid.has-3-columns, .wc-block-grid__product {
