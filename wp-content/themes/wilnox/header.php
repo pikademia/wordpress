@@ -12,6 +12,9 @@
 <body <?php body_class(); ?>>
 
 <?php
+    echo '<div class="main_menu">';
+    wp_nav_menu( array('theme_location'=>'primary') );
+    echo '</div>';
 echo '<div class="container xl">';
 
     echo '<div class="header_section">';
@@ -24,8 +27,10 @@ echo '<div class="container xl">';
                 echo '<p class="blog_info_desc_w">'.get_bloginfo( 'description' ). '</p>';
             echo '</div>';
         echo '</div>';
-        echo '<div class="main_menu">';
-             wp_nav_menu( array('theme_location'=>'primary') );
+        echo '<div class="search_section">';
+        get_search_form( );
         echo '</div>';
     echo '</div>';
+    //wp_nav_menu( array('theme_location'=>'secondary') );
+
 echo '</div>';

@@ -7,7 +7,7 @@ Author: Mateusz Wiliński
 Author URI: https://wilnox.com/
 Description: Wilnox Academy Theme
 Requires at least: 5.9
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 */
 
@@ -25,6 +25,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block;
 }
 
+li{
+  padding: 8px 0;
+}
 ol, ul {
 	list-style: none;
 }
@@ -50,11 +53,13 @@ p{
   box-sizing: border-box;
 }
 
-:root{
-  --themeColor1:#3399cc;
-  --themeColor2:rgb(211, 211, 211);
-
+.min_page_height{
+  min-height: 550px;
 }
+.md{
+  max-width:800px;
+}
+
 .xl {
   max-width:1280px;
 }

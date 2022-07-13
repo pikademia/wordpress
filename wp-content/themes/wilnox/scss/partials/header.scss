@@ -1,18 +1,39 @@
 @use 'variables' as *;
 
-.header_section{
-    padding-top: 20px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .header_section_logo_section{
-    display: flex;
-    gap: 20px;
-  }
-  
+.header_section {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.search_section {
+  flex: 50%;
+}
+
+.search-form {
+  padding-bottom: 40px;
+}
+
+.search-field {
+  padding: 10px;
+  width: 79%;
+  box-sizing: border-box;
+}
+
+.search-submit {
+  padding: 10px;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.header_section_logo_section {
+  display: flex;
+  gap: 20px;
+  flex: 50%;
+}
+
   .blog_info_name_w{
     text-transform: uppercase;
     font-weight: 600;
@@ -41,8 +62,22 @@
   }
 
   @media (max-width: $breakpointTablet) {
-    .header_section{
+    .header_section {
       justify-content: center;
       flex-wrap: wrap;
+    }
+    .search_section {
+      width: 90%;
+    }
+  }
+  @media (max-width: $breakpointMobile) {
+    .search_section {
+      width: 100%;
+    }
+    .search-field {
+      width: 59%;
+    }
+    .search-submit {
+      width: 34%;
     }
   }
